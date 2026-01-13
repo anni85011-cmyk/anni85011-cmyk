@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анна Карманова | Резюме</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Стили можно писать прямо здесь, чтобы не создавать отдельный файл */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 { font-size: 2.8rem; margin-bottom: 10px; font-weight: 600; }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        .contact-links a {
+            color: white;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            transition: opacity 0.3s;
+        }
+        .contact-links a:hover { opacity: 0.8; }
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #2d3436;
+            border-bottom: 3px solid #6a11cb;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        h3 { color: #2575fc; margin-top: 20px; font-size: 1.3rem; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .skill-category {
+            background: #f1f3f4;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .skill-category h4 { margin-bottom: 10px; color: #444; }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 0.9rem;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            body { padding: 15px; }
+            h1 { font-size: 2.2rem; }
+            .skills-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Анна Карманова</h1>
+        <p class="subtitle">Студентка-разработчик | Начинающий специалист в IT-поддержке</p>
+        <p class="subtitle">Нижний Новгород</p>
+        <div class="contact-links">
+            <a href="mailto:anna_karmanov_a@mail.ru" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+79049573033" title="Позвонить"><i class="fas fa-phone"></i></a>
+            <!-- Вставьте свою ссылку на резюме на Google Диске -->
+            <a href="https://drive.google.com/ваша_ссылка_на_резюме.pdf" title="Скачать резюме (PDF)"><i class="fas fa-file-pdf"></i></a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Обо мне</h2>
+        <p>Студентка 3-го курса НГТУ им. Алексеева по специальности "Информационные системы и программирование". Ищу первую возможность применить теоретические знания на практике в роли специалиста технической поддержки. Обладаю развитыми коммуникативными навыками благодаря опыту работы в клиентском сервисе. Быстро обучаюсь, ответственна и нацелена на результат.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Навыки</h2>
+      div class="skills-grid">
+            <div class="skill-category">
+                <h4>Технические</h4>
+                <ul>
+                    <li>Основы C#</li>
+                    <li>Базовое администрирование 1С</li>
+                    <li>HTML, CSS (базовый уровень)</li>
+                    <li>MS Office / Google Docs</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Профессиональные</h4>
+                <ul>
+                    <li>Поддержка пользователей</li>
+                    <li>Решение проблем</li>
+                    <li>Работа в команде</li>
+                    <li>Коммуникация</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Языки</h4>
+                <ul>
+                    <li>Русский (родной)</li>
+                    <li>Английский (A1, Beginner)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Опыт работы</h2>
+        <h3>Официант | Сыроварня (ресторан), Нижний Новгород</h3>
+        <p><em>Октябрь 2024 — Август 2025</em></p>
+        <ul>
+            <li>Консультирование гостей, работа с запросами и решением нестандартных ситуаций.</li>
+            <li>Развитие стрессоустойчивости и навыков работы в высоконагруженной среде.</li>
+            <li>Получение положительных отзывов за внимательное обслуживание.</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Образование</h2>
+        <h3>НГТУ им. Р.Е. Алексеева</h3>
+        <p><strong>Специальность:</strong> Информационные системы и программирование</p>
+        <p><strong>Статус:</strong> Студентка 3 курса (окончание в 2027 г.)</p>
+        <p><strong>Изучаемые дисциплины:</strong> Основы программирования (C#), Базы данных, Web-технологии, Сетевые технологии.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Анна Карманова. Это сайт-визитка, созданный в учебных целях.</p>
+        <p>Свяжитесь со мной: <a href="mailto:anna_karmanov_a@mail.ru">anna_karmanov_a@mail.ru</a> | +7 (904) 957-30-33</p>
+    </footer>
+</body>
+</html>
